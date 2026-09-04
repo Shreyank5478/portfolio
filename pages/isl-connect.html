@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ISL Connect — Case Study | Shreyank Parmar</title>
+<meta name="description" content="Case study: ISL Connect, an AI-powered Indian Sign Language learning platform.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+
+<div id="trace"><div id="trace-fill"></div></div>
+
+<nav>
+  <div class="wrap">
+    <a class="name" href="../index.html">Shreyank Parmar</a>
+    <div class="links">
+      <a href="../index.html#about">About</a>
+      <a href="../index.html#work">Work</a>
+      <a href="../index.html#design">Design</a>
+      <a href="../index.html#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="case-hero">
+  <div class="wrap wide">
+    <a class="back-link" href="../index.html#work">← Back to work</a>
+    <div class="eyebrow mono">Case study · AI-powered learning platform</div>
+    <h1>ISL Connect</h1>
+    <p class="lede">A learning platform that teaches Indian Sign Language through short lessons and live, webcam-based gesture recognition — built to make daily practice feel approachable instead of intimidating.</p>
+    <div class="case-meta">
+      <div><div class="k mono">ROLE</div><div class="v">Frontend &amp; product flow</div></div>
+      <div><div class="k mono">TEAM</div><div class="v">2–3 people</div></div>
+      <div><div class="k mono">STACK</div><div class="v">React · Python · MediaPipe · Flask · scikit-learn</div></div>
+      <div><div class="k mono">STATUS</div><div class="v">Live, actively developed</div></div>
+      <div><div class="k mono">LINK</div><div class="v"><a href="https://sign-language-learner-de.web.app/" target="_blank" rel="noopener" style="color:var(--teal);">Try the live demo →</a></div></div>
+    </div>
+  </div>
+</header>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>The problem</h2>
+    <p>Over 18 million people in India are deaf or hard of hearing, and Indian Sign Language is often their primary mode of communication — yet structured, accessible ways to learn it are scarce. Most resources are either expensive, scattered across YouTube with no practice loop, or too clinical to stick with. We wanted something that felt more like a habit you could actually keep.</p>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>Landing &amp; first impression</h2>
+    <p>The homepage leads with what makes the product different — AI-based practice feedback, not just video lessons — and lays out the three-step path (watch, practice with AI, track progress) before asking for any commitment.</p>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-01-landing.jpg" alt="ISL Connect landing page with the headline 'Master ISL with Intelligent Practice' and a three-step how-it-works section.">
+      <div class="screen-caption"><strong>Landing page</strong> — value proposition, how-it-works steps, and popular starting courses.</div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>Learning a sign</h2>
+    <p>Each lesson pairs a short reference video with the full ISL alphabet chart for cross-checking, plus a direct path into AI-assisted practice once you're ready to test yourself.</p>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-08-lesson.jpg" alt="ISL Connect lesson page for Letter A, showing a reference video, the ISL alphabet chart, and a 'Practice This Sign with AI' button.">
+      <div class="screen-caption"><strong>Lesson page</strong> — video reference, alphabet chart, and step-by-step practice guidance side by side.</div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>Practicing with live gesture recognition</h2>
+    <p>This is the core of the product: a webcam feed runs through MediaPipe for hand landmark tracking, feeding a custom-trained scikit-learn model that recognizes ISL letters and numbers in real time — with live confidence scoring and feedback so you know whether you're actually forming the sign correctly, not just guessing.</p>
+    <div class="status-note">
+      <strong>Honest status note:</strong> the screen below was captured before the camera was started, which is why the system status panel shows the camera and API as inactive — that's the app's own real-time status display, not a placeholder. Once the session starts, gesture recognition runs live.
+    </div>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-03-practice.jpg" alt="ISL Connect AI practice screen with a camera panel, live performance stats, detected sign panel, and system status indicators.">
+      <div class="screen-caption"><strong>Practice with Gesture Recognition</strong> — live camera feed, detected-sign confidence, mastery tracking, and an ISL reference chart alongside for comparison.</div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>Staying consistent</h2>
+    <p>Practice only works if people come back. The dashboard leans on small, concrete signals — a day streak, XP progress, a "sign of the day" — to make returning feel worthwhile rather than like homework.</p>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-02-dashboard.jpg" alt="ISL Connect dashboard showing XP progress, day streak, sign of the day, and active courses.">
+      <div class="screen-caption"><strong>Dashboard</strong> — progress at a glance, a resumable lesson, and the day's focus sign.</div>
+    </div>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-07-achievements.jpg" alt="ISL Connect achievements screen showing XP, badges, learning milestones, and suggested review signs.">
+      <div class="screen-caption"><strong>Achievements</strong> — milestone tracking and a suggested-review list pulled from recent practice.</div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>Learning together</h2>
+    <p>Language learning is easier with other people. The community space holds study groups by skill level and interest — including one for educators and healthcare workers learning ISL for professional use — plus an open discussion board for troubleshooting and sharing progress.</p>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-04-community.jpg" alt="ISL Connect community page with study groups, a discussion board, and upcoming events.">
+      <div class="screen-caption"><strong>Community</strong> — study groups, an open discussion board, and scheduled practice events.</div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>Profile &amp; mission</h2>
+    <p>The About page states the mission plainly, and the profile page keeps personal progress visible without turning the whole experience into a leaderboard.</p>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-05-about.jpg" alt="ISL Connect About page stating the mission to bridge communication gaps with technology.">
+      <div class="screen-caption"><strong>About</strong> — the mission, core values, and who the platform is built for.</div>
+    </div>
+    <div class="screen-block">
+      <img src="../assets/screenshots/isl-06-profile.jpg" alt="ISL Connect user profile page showing streak, XP, lessons, and badges earned.">
+      <div class="screen-caption"><strong>Profile</strong> — a quieter view of the same progress data, for a quick personal check-in.</div>
+    </div>
+  </div>
+</section>
+
+<section class="case-section">
+  <div class="wrap wide">
+    <h2>What I'd build next</h2>
+    <p>Expanding the gesture model beyond the alphabet and 1–9 into common everyday phrases, tightening the confidence-scoring feedback so it's specific about what to adjust (not just right/wrong), and running a small usability session with actual ISL learners to see where the current flow breaks down.</p>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Shreyank Parmar</div>
+  <div><a href="../index.html#contact" style="color:var(--teal); text-decoration:none;">Get in touch →</a></div>
+</footer>
+
+<script src="../scripts/main.js"></script>
+</body>
+</html>

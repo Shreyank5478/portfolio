@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shreyank Parmar — Computer Science &amp; Design</title>
+<meta name="description" content="Portfolio of Shreyank Parmar, Computer Science and Design student building real-time web apps.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<div id="trace"><div id="trace-fill"></div></div>
+
+<nav>
+  <div class="wrap">
+    <a class="name" href="index.html">Shreyank Parmar</a>
+    <div class="links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#design">Design</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <div class="kicker mono">Computer Science &amp; Design — SVIT, 2023–2027</div>
+        <h1>Systems that hold up. Interfaces that <em>make sense.</em></h1>
+        <p class="lede">I'm a CS &amp; Design student who builds real-time web apps — the backend and the interface on top of it, usually with a small team moving fast. Most of what's below started as a rough Figma sketch and ended up deployed.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#work">See the work</a>
+          <a class="btn ghost" href="#contact">Get in touch</a>
+        </div>
+      </div>
+      <!-- Photo slot: replace this div with <img src="assets/images/photo.jpg" alt="Shreyank Parmar"> when ready -->
+      <!-- <div class="hero-photo"><img src="assets/images/photo.jpg" alt="Shreyank Parmar"></div> -->
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <h2 class="heading">About</h2>
+    <p>Third-year Computer Science and Design student at Sardar Vallabhbhai Patel Institute of Technology — a course that forces you to hold two disciplines at once instead of picking one. I like projects where the hard part isn't just "does it work" but "does it make sense to someone using it under pressure": a volunteer logging a campus complaint, a farmer checking tomorrow's weather, someone learning sign language through a webcam.</p>
+    <p>Most of my stack runs through React and Firebase, with Python on the side for anything closer to data or vision. Figma is where things start.</p>
+    <div class="facts">
+      <div><div class="k mono">EDUCATION</div><div class="v">B.E. Computer Science &amp; Design, SVIT</div></div>
+      <div><div class="k mono">CGPA</div><div class="v">9.24</div></div>
+      <div><div class="k mono">GRADUATING</div><div class="v">2027</div></div>
+      <div><div class="k mono">LANGUAGES</div><div class="v">Gujarati, Hindi, English</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap wide">
+    <h2 class="heading">Work</h2>
+    <p class="heading-sub" style="margin-bottom:36px;">A few things I've shipped, prototyped, or am still happily stuck debugging.</p>
+
+    <div class="project featured">
+      <div class="row-top">
+        <h3>ISL Connect</h3>
+        <span class="status mono">Most proud of</span>
+      </div>
+      <div class="one-liner">An AI-powered platform that teaches Indian Sign Language through guided lessons and live, webcam-based gesture recognition.</div>
+      <div class="detail">Built with a small team — I led the frontend and the product flow. It's the project I'd point to first: real gesture recognition, a full learning path from lesson to AI-assisted practice, a community space, and progress tracking. It's also the one that matters to me beyond the tech — it's meant to genuinely help someone learn.</div>
+      <div class="tags"><span>React</span><span>Python</span><span>Computer Vision</span><span>Firebase</span></div>
+      <div class="link-row">
+        <a class="link" href="https://sign-language-learner-de.web.app/" target="_blank" rel="noopener">Try the live demo</a>
+        <a class="link" href="pages/isl-connect.html">Read the case study →</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="row-top"><h3>Smart Campus Service Management System</h3></div>
+      <div class="one-liner">A role-based portal for logging and tracking campus service requests in real time.</div>
+      <div class="detail">Built the frontend from scratch and wired it to Firebase for authentication and Firestore for live status updates, then shipped it on Firebase Hosting — so a request raised by a student updates instantly for whoever's handling it.</div>
+      <div class="tags"><span>React</span><span>TypeScript</span><span>Firebase</span></div>
+      <div class="link-row">
+        <a class="link" href="https://github.com/Shreyank5478/Smart-Campus-Service-Management" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="row-top">
+        <h3>KrishiMitra</h3>
+        <span class="status mono">Hackathon</span>
+      </div>
+      <div class="one-liner">A bilingual prototype giving farmers crop recommendations, live weather, and a chatbot to ask questions in their own language.</div>
+      <div class="detail">Built at a GDG hackathon. Integrated weather and chatbot APIs and helped shape a two-language interface, so it's usable by someone who isn't comfortable reading English.</div>
+      <div class="tags"><span>React</span><span>TypeScript</span><span>APIs</span></div>
+      <div class="link-row">
+        <a class="link" href="https://github.com/Shreyank5478/Krishi-Mitra" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="row-top"><h3>Developer Snippet Vault</h3></div>
+      <div class="one-liner">A production-style backend API for saving and organizing developer snippets and commands.</div>
+      <div class="detail">Built with proper request validation and test coverage, structured for deployment rather than as a one-off script — a small exercise in treating a side project like it has to survive contact with real users.</div>
+      <div class="tags"><span>Python</span><span>Flask</span><span>DevOps</span></div>
+      <div class="link-row">
+        <a class="link" href="https://github.com/Shreyank5478/developer-snippet-vault" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="row-top"><h3>Moodmate</h3></div>
+      <div class="one-liner">Reads your mood, hands you a sarcastic quote, and queues up Spotify tracks to match.</div>
+      <div class="tags"><span>React</span><span>APIs</span></div>
+      <div class="link-row">
+        <a class="link" href="https://github.com/Shreyank5478/Moodmate" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="row-top"><h3>WordNest</h3></div>
+      <div class="one-liner">One click pairs an AI-generated poetic phrase with a matching image pulled from Unsplash.</div>
+      <div class="tags"><span>JavaScript</span><span>OpenAI</span><span>Unsplash</span></div>
+      <div class="link-row">
+        <a class="link" href="https://github.com/Shreyank5478/WordNest" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="design">
+  <div class="wrap wide">
+    <h2 class="heading">Design</h2>
+    <p class="heading-sub" style="margin-bottom:36px;">Visual and layout work, separate from shipped code.</p>
+
+    <div class="design-piece">
+      <h3>Explore Ancient Egypt — Editorial Carousel</h3>
+      <div class="one-liner">A 9-frame layout exploring Ancient Egypt's history, politics, geography, and legacy — consistent frame structure, a warm brown-and-gold palette suited to the subject, and a clear text/image hierarchy across every slide.</div>
+      <img src="assets/images/egypt-carousel.jpg" alt="Nine-frame editorial carousel about Ancient Egypt, showing consistent layout and a warm brown and gold color palette across slides.">
+    </div>
+
+    <div class="ai-explore">
+      <h3 style="font-size:20px; margin-bottom:10px;">AI-assisted exploration</h3>
+      <div class="ai-explore-note">
+        <strong>A note on these:</strong> the pieces below were generated with AI design tools (Figma Make / Figma AI) from prompts I wrote, sometimes starting from a template. I'm including them openly, labeled as exploration rather than from-scratch design work — this is genuinely part of how I prototype fast right now.
+      </div>
+      <div class="ai-grid">
+        <div class="ai-card">
+          <img src="assets/images/ai-shopping-app.jpg" alt="AI-generated personalized shopping app UI, prompted and directed by Shreyank.">
+          <div class="ai-card-body">
+            <h4>Personalized Shopping App</h4>
+            <p>Prompted and iterated in Figma Make — mobile-first e-commerce UI exploration.</p>
+          </div>
+        </div>
+        <div class="ai-card">
+          <img src="assets/images/ai-nexus-store.jpg" alt="AI-generated dark-themed gaming storefront UI, prompted and directed by Shreyank.">
+          <div class="ai-card-body">
+            <h4>NEXUS — Gaming Storefront</h4>
+            <p>Dark-themed e-commerce homepage concept, AI-generated from a prompt.</p>
+          </div>
+        </div>
+        <div class="ai-card">
+          <img src="assets/images/ai-bharat-bazaar.jpg" alt="AI-generated Bharat Bazaar cultural e-commerce homepage, prompted and directed by Shreyank.">
+          <div class="ai-card-body">
+            <h4>Bharat Bazaar</h4>
+            <p>Cultural e-commerce concept — traditional Indian instruments and crafts, AI-generated.</p>
+          </div>
+        </div>
+        <div class="ai-card">
+          <img src="assets/images/ai-plant-shop.jpg" alt="Edited plant e-commerce landing page, based on a Figma Community template.">
+          <div class="ai-card-body">
+            <h4>Plant Shop Landing Page</h4>
+            <p>Edited from a Figma Community template — practicing layout and visual hierarchy.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <h2 class="heading">Skills</h2>
+    <div class="skill-group">
+      <div class="label mono">LANGUAGES</div>
+      <div class="chip-row"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">TypeScript</span></div>
+    </div>
+    <div class="skill-group">
+      <div class="label mono">WEB &amp; TOOLS</div>
+      <div class="chip-row">
+        <span class="chip">React</span><span class="chip">HTML</span><span class="chip">CSS</span>
+        <span class="chip">Firebase</span><span class="chip">Git</span><span class="chip">Figma</span><span class="chip">Canva</span>
+      </div>
+    </div>
+    <div class="skill-group">
+      <div class="label mono">FOUNDATIONS</div>
+      <div class="chip-row">
+        <span class="chip">Object-Oriented Programming</span><span class="chip">Data Structures</span>
+        <span class="chip">DBMS</span><span class="chip">Operating Systems</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications">
+  <div class="wrap">
+    <h2 class="heading">Certifications</h2>
+    <div class="cert"><span>SAP Certified — Back-End Developer, ABAP Cloud</span><span class="issuer mono">SAP</span></div>
+    <div class="cert"><span>Introduction to Generative AI for Developers</span><span class="issuer mono">Microsoft</span></div>
+    <div class="cert"><span>Introduction to Agile Development and Scrum</span><span class="issuer mono">IBM</span></div>
+    <div class="cert"><span>Software Engineering Essentials</span><span class="issuer mono">Coursera</span></div>
+    <div class="cert"><span>Customer Engagement and Discovery</span><span class="issuer mono">SAP</span></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Let's talk.</h2>
+    <p>Looking for internship and placement opportunities where I can work across the stack — building the system and the interface on top of it. Reach out directly, no forms.</p>
+    <div class="contact-links">
+      <a href="mailto:shreyank6341@gmail.com">Email <span class="arrow mono">shreyank6341@gmail.com →</span></a>
+      <a href="https://linkedin.com/in/shreyank7836" target="_blank" rel="noopener">LinkedIn <span class="arrow mono">/in/shreyank7836 →</span></a>
+      <a href="https://github.com/Shreyank5478" target="_blank" rel="noopener">GitHub <span class="arrow mono">/Shreyank5478 →</span></a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div>© 2026 Shreyank Parmar</div>
+  <div>Vasad, Gujarat</div>
+</footer>
+
+<script src="scripts/main.js"></script>
+</body>
+</html>
